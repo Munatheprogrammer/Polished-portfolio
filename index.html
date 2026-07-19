@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Mirabel Agu — Frontend Developer</title>
+<meta name="description" content="Mirabel Agu — Computer Science student at ESUT and frontend developer based in Enugu, Nigeria.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,600;0,9..144,700;1,9..144,500&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="grain"></div>
+
+<header class="site-header">
+  <div class="wrap header-inner">
+    <a href="#top" class="logo">Mirabel<span class="dot">.</span></a>
+    <nav class="nav-links">
+      <a href="#about">About</a>
+      <a href="#skills">Skills</a>
+      <a href="#projects">Projects</a>
+      <a href="#contact">Contact</a>
+    </nav>
+    <button class="nav-toggle" aria-label="Toggle menu" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</header>
+
+<main id="top">
+
+  <!-- HERO -->
+  <section class="hero">
+    <div class="hero-pattern" aria-hidden="true"></div>
+    <div class="wrap hero-inner">
+      <p class="eyebrow mono">Enugu, Nigeria — available for opportunities</p>
+      <h1 class="hero-name">Mirabel Agu</h1>
+      <p class="hero-role">Frontend developer &amp; CS student at ESUT, building interfaces that work as good as they look.</p>
+      <div class="hero-actions">
+        <a href="#projects" class="btn btn-primary">See my work</a>
+        <a href="#contact" class="btn btn-ghost">Get in touch</a>
+      </div>
+    </div>
+    <div class="scroll-cue" aria-hidden="true"><span></span></div>
+  </section>
+
+  <!-- ABOUT -->
+  <section id="about" class="section reveal">
+    <div class="wrap about-grid">
+      <div class="about-label-col">
+        <p class="eyebrow mono">About</p>
+        <h2 class="section-title">Who I am</h2>
+      </div>
+      <div class="about-body">
+        <p>I'm Mirabel Munachimso Agu, a Computer Science student at Enugu State University of Science and Technology, currently sharpening my frontend skills through the Genesys Tech Hub Upskill program.</p>
+        <p>I care about software that's accessible, functional, and genuinely useful — not just impressive in a demo. Right now that means going deep on HTML, CSS, and JavaScript while picking up Python and React on the side.</p>
+        <p>Outside of code, I'm motivated by something simple: showing that young African women belong at the front of the room in tech, not the back.</p>
+
+        <div class="stat-row">
+          <div class="stat">
+            <span class="stat-num">3+</span>
+            <span class="stat-label mono">Projects shipped</span>
+          </div>
+          <div class="stat">
+            <span class="stat-num">4+</span>
+            <span class="stat-label mono">Core skills</span>
+          </div>
+          <div class="stat">
+            <span class="stat-num">∞</span>
+            <span class="stat-label mono">Still learning</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SKILLS -->
+  <section id="skills" class="section reveal">
+    <div class="wrap">
+      <p class="eyebrow mono">Skills</p>
+      <h2 class="section-title">What I work with</h2>
+
+      <div class="skills-grid">
+        <div class="skill-group">
+          <h3 class="skill-group-title">Core</h3>
+          <ul class="skill-list">
+            <li>HTML5</li>
+            <li>CSS3</li>
+            <li>JavaScript</li>
+            <li>Responsive Design</li>
+            <li>Git &amp; GitHub</li>
+          </ul>
+        </div>
+        <div class="skill-group">
+          <h3 class="skill-group-title">Currently learning</h3>
+          <ul class="skill-list">
+            <li>Python</li>
+            <li>React</li>
+          </ul>
+        </div>
+        <div class="skill-group">
+          <h3 class="skill-group-title">Tools</h3>
+          <ul class="skill-list">
+            <li>VS Code</li>
+            <li>Chrome DevTools</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PROJECTS -->
+  <section id="projects" class="section reveal">
+    <div class="wrap">
+      <p class="eyebrow mono">Projects</p>
+      <h2 class="section-title">What I've built</h2>
+
+      <div class="project-list">
+
+        <article class="project-card reveal">
+          <div class="project-tags mono">Frontend · Personal</div>
+          <h3 class="project-title">Personal Portfolio</h3>
+          <p class="project-desc">Needed a proper home for my work online — this site is it. Built from scratch with vanilla HTML, CSS, and JavaScript: custom animations, scroll reveals, and a fully responsive layout, no framework involved.</p>
+          <div class="project-links">
+            <a href="https://github.com/Munatheprogrammer" target="_blank" rel="noopener">GitHub ↗</a>
+            <a href="https://munatheprogrammer.github.io/agumirabel.github.io/" target="_blank" rel="noopener">Live demo ↗</a>
+          </div>
+        </article>
+
+        <article class="project-card reveal">
+          <div class="project-tags mono">Frontend · API · Utility</div>
+          <h3 class="project-title">Nigerian Weather Dashboard</h3>
+          <p class="project-desc">Most weather apps default to cities that aren't home. Built a dashboard showing live weather for Lagos, Enugu, and Abuja, pulling real-time data from a public API into a clean, readable layout.</p>
+          <div class="project-links">
+            <a href="https://github.com/Munatheprogrammer" target="_blank" rel="noopener">GitHub ↗</a>
+            <a href="https://munatheprogrammer.github.io/Nigerian-Weather-Dashboard/" target="_blank" rel="noopener">Live demo ↗</a>
+          </div>
+        </article>
+
+        <article class="project-card reveal">
+          <div class="project-tags mono">Frontend · localStorage · Finance</div>
+          <h3 class="project-title">Student Budget Tracker</h3>
+          <p class="project-desc">Nigerian uni students juggle fees, allowance, and savings with no easy way to track it. Built a lightweight finance tracker that logs income, expenses, and savings goals entirely in the browser — no backend required.</p>
+          <div class="project-links">
+            <a href="https://github.com/Munatheprogrammer" target="_blank" rel="noopener">GitHub ↗</a>
+            <a href="https://munatheprogrammer.github.io/Student-Budget-Tracker/" target="_blank" rel="noopener">Live demo ↗</a>
+          </div>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section id="contact" class="section reveal">
+    <div class="wrap contact-wrap">
+      <p class="eyebrow mono">Contact</p>
+      <h2 class="section-title">Let's connect</h2>
+
+      <div class="contact-box">
+        <h3>Open to opportunities 🚀</h3>
+        <p>Whether you have a project, an internship, or just want to talk tech — my inbox is always open.</p>
+
+        <button class="contact-email mono" id="copyEmail" data-email="agumirabel3@gmail.com">
+          agumirabel3@gmail.com
+          <span class="copy-hint mono">tap to copy</span>
+        </button>
+
+        <div class="social-links">
+          <a href="https://github.com/Munatheprogrammer" target="_blank" rel="noopener">GitHub</a>
+          <a href="https://www.linkedin.com/in/mirabel-agu-384938391" target="_blank" rel="noopener">LinkedIn</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="wrap footer-inner">
+    <p class="mono">Designed &amp; built by Mirabel Agu · © 2025</p>
+    <a href="#top" class="back-top mono">Back to top ↑</a>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
