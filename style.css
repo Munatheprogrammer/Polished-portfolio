@@ -367,12 +367,6 @@ nav {
 .wip-badge {
   font-family: 'Inter', sans-serif;
   font-size: 0.62rem; font-weight: 700;
-  background: var(--accent2); color: white;
-  padding: 0.2rem 0.6rem; border-radius: 20px;
-  letter-spacing: 0.5px; text-transform: uppercase;
-}
-  font-family: 'Inter', sans-serif;
-  font-size: 0.62rem; font-weight: 700;
   background: var(--accent); color: white;
   padding: 0.2rem 0.6rem; border-radius: 20px;
   letter-spacing: 0.5px; text-transform: uppercase;
@@ -469,8 +463,13 @@ footer a:hover { color: var(--accent); }
   nav { padding: 1rem 1.5rem; }
   .nav-links { display: none; }
   .hero { padding: 7rem 1.5rem 3rem; }
-  .hero-inner { grid-template-columns: 1fr; gap: 2.5rem; }
-  .hero-photo-wrap { display: none; }
+  .hero-inner { grid-template-columns: 1fr; gap: 2.5rem; justify-items: center; text-align: center; }
+  .hero-text { text-align: center; }
+  .hero-text .hero-sub { margin-left: auto; margin-right: auto; }
+  .hero-btns { justify-content: center; }
+  .hero-location { text-align: center; }
+  .hero-photo-wrap { display: block; margin: 0 auto; }
+  .hero-photo { width: 200px; height: 230px; margin: 0 auto; }
   .about-grid { grid-template-columns: 1fr; gap: 2.5rem; }
   .skills-grid { grid-template-columns: 1fr; gap: 1.5rem; }
   .contact-grid { grid-template-columns: 1fr; gap: 2rem; }
@@ -483,5 +482,6 @@ footer a:hover { color: var(--accent); }
   .project-meta { border-right: none; border-bottom: 1px solid var(--border); flex-direction: row; align-items: center; padding: 1rem 1.5rem; }
   .footer { flex-direction: column; gap: 0.5rem; text-align: center; }
 }
+
 
 
