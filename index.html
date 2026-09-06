@@ -1,75 +1,137 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Mirabel Agu — Frontend Developer</title>
-<meta name="description" content="Mirabel Agu — Computer Science student at ESUT and frontend developer based in Enugu, Nigeria.">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,600;0,9..144,700;1,9..144,500&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="description" content="Mirabel Agu — Computer Science student at ESUT and frontend developer based in Enugu, Nigeria."/>
+  <title>Mirabel Agu — Frontend Developer</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com"/>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:wght@700;800&family=Space+Mono&display=swap" rel="stylesheet"/>
+  <link rel="stylesheet" href="style.css"/>
 </head>
 <body>
 
-<div class="grain"></div>
-
-<header class="site-header">
-  <div class="wrap header-inner">
-    <a href="#top" class="logo">Mirabel<span class="dot">.</span></a>
-    <nav class="nav-links">
-      <a href="#about">About</a>
-      <a href="#skills">Skills</a>
-      <a href="#projects">Projects</a>
-      <a href="#contact">Contact</a>
-    </nav>
-    <button class="nav-toggle" aria-label="Toggle menu" aria-expanded="false">
-      <span></span><span></span><span></span>
+  <!-- NAV -->
+  <nav id="nav">
+    <a href="#top" class="nav-logo">Mirabel.</a>
+    <ul class="nav-links">
+      <li><a href="#about">About</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+    <button class="nav-cta" onclick="document.getElementById('contact').scrollIntoView({behavior:'smooth'})">
+      Hire Me
     </button>
-  </div>
-</header>
-
-<main id="top">
+  </nav>
 
   <!-- HERO -->
-  <section class="hero">
-    <div class="hero-pattern" aria-hidden="true"></div>
-    <div class="wrap hero-inner">
-      <p class="eyebrow mono">Enugu, Nigeria — available for opportunities</p>
-      <h1 class="hero-name">Mirabel Agu</h1>
-      <p class="hero-role">Frontend developer &amp; CS student at ESUT, building interfaces that work as good as they look.</p>
-      <div class="hero-actions">
-        <a href="#projects" class="btn btn-primary">See my work</a>
-        <a href="#contact" class="btn btn-ghost">Get in touch</a>
+  <section class="hero" id="top">
+    <div class="hero-inner">
+      <div class="hero-text">
+        <span class="hero-location">📍 Enugu, Nigeria — available for opportunities</span>
+        <h1>Mirabel<br/><em>Agu.</em></h1>
+        <p class="hero-sub">Frontend developer & CS student at ESUT, building interfaces that work as good as they look.</p>
+        <div class="hero-btns">
+          <a href="#projects" class="btn-primary">See my work</a>
+          <a href="#contact" class="btn-outline">Get in touch</a>
+        </div>
+      </div>
+
+      <!-- Profile picture placeholder — replace src with your actual photo -->
+      <div class="hero-photo-wrap">
+        <div class="hero-photo">
+          <img
+            src="profile.jpg"
+            alt="Mirabel Agu"
+            onerror="this.style.display='none'; this.parentElement.querySelector('.photo-placeholder').style.display='flex';"
+          />
+          <div class="photo-placeholder">
+            <span>MA</span>
+            <p>Add profile.jpg<br/>to your repo</p>
+          </div>
+        </div>
+        <div class="hero-photo-tag">Frontend Developer</div>
       </div>
     </div>
-    <div class="scroll-cue" aria-hidden="true"><span></span></div>
+
+    <div class="hero-stats">
+      <div class="stat">
+        <strong>3+</strong>
+        <span>Projects shipped</span>
+      </div>
+      <div class="stat-divider"></div>
+      <div class="stat">
+        <strong>4+</strong>
+        <span>Core skills</span>
+      </div>
+      <div class="stat-divider"></div>
+      <div class="stat">
+        <strong>2025</strong>
+        <span>Genesys Upskill</span>
+      </div>
+      <div class="stat-divider"></div>
+      <div class="stat">
+        <strong>∞</strong>
+        <span>Still learning</span>
+      </div>
+    </div>
   </section>
 
   <!-- ABOUT -->
-  <section id="about" class="section reveal">
-    <div class="wrap about-grid">
-      <div class="about-label-col">
-        <p class="eyebrow mono">About</p>
-        <h2 class="section-title">Who I am</h2>
-      </div>
-      <div class="about-body">
-        <p>I'm Mirabel Munachimso Agu, a Computer Science student at Enugu State University of Science and Technology, currently sharpening my frontend skills through the Genesys Tech Hub Upskill program.</p>
-        <p>I care about software that's accessible, functional, and genuinely useful — not just impressive in a demo. Right now that means going deep on HTML, CSS, and JavaScript while picking up Python and React on the side.</p>
-        <p>Outside of code, I'm motivated by something simple: showing that young African women belong at the front of the room in tech, not the back.</p>
+  <section class="section" id="about">
+    <div class="section-inner">
+      <span class="section-label">About</span>
+      <h2 class="section-title">Who I am</h2>
 
-        <div class="stat-row">
-          <div class="stat">
-            <span class="stat-num">3+</span>
-            <span class="stat-label mono">Projects shipped</span>
+      <div class="about-grid">
+        <div class="about-text">
+          <p>
+            I'm <strong>Mirabel Munachimso Agu</strong>, a 300-level Computer Science student at
+            Enugu State University of Science and Technology (ESUT), currently sharpening my
+            frontend skills through the <strong>Genesys Tech Hub Upskill 26.1</strong> program.
+          </p>
+          <p>
+            As part of Genesys, I contributed to building <strong>Vita Track</strong> — a hospital
+            billing and collections platform designed to streamline staff records, billing clearance,
+            and revenue management for healthcare institutions. Working on a real product with a
+            team taught me how frontend development works in a professional setting.
+          </p>
+          <p>
+            I care about software that's accessible, functional, and genuinely useful — not just
+            impressive in a demo. Outside of code, I'm motivated by something simple: showing that
+            young African women belong at the front of the room in tech, not the back.
+          </p>
+        </div>
+
+        <div class="about-cards">
+          <div class="about-card">
+            <span class="about-card-icon">🎓</span>
+            <div>
+              <strong>ESUT</strong>
+              <p>B.Sc. Computational Science<br/>300 Level · 2023–2027</p>
+            </div>
           </div>
-          <div class="stat">
-            <span class="stat-num">4+</span>
-            <span class="stat-label mono">Core skills</span>
+          <div class="about-card">
+            <span class="about-card-icon">⚡</span>
+            <div>
+              <strong>Genesys Tech Hub</strong>
+              <p>Upskill 26.1 Program<br/>Web Development Track</p>
+            </div>
           </div>
-          <div class="stat">
-            <span class="stat-num">∞</span>
-            <span class="stat-label mono">Still learning</span>
+          <div class="about-card">
+            <span class="about-card-icon">🏥</span>
+            <div>
+              <strong>Vita Track</strong>
+              <p>Hospital Billing Platform<br/>Frontend Contributor</p>
+            </div>
+          </div>
+          <div class="about-card">
+            <span class="about-card-icon">🔒</span>
+            <div>
+              <strong>SIWES</strong>
+              <p>Industrial Placement<br/>Information Security</p>
+            </div>
           </div>
         </div>
       </div>
@@ -77,34 +139,37 @@
   </section>
 
   <!-- SKILLS -->
-  <section id="skills" class="section reveal">
-    <div class="wrap">
-      <p class="eyebrow mono">Skills</p>
+  <section class="section section-alt" id="skills">
+    <div class="section-inner">
+      <span class="section-label">Skills</span>
       <h2 class="section-title">What I work with</h2>
 
       <div class="skills-grid">
         <div class="skill-group">
-          <h3 class="skill-group-title">Core</h3>
-          <ul class="skill-list">
-            <li>HTML5</li>
-            <li>CSS3</li>
-            <li>JavaScript</li>
-            <li>Responsive Design</li>
-            <li>Git &amp; GitHub</li>
+          <h3>Core</h3>
+          <ul>
+            <li><span class="skill-dot"></span>HTML5</li>
+            <li><span class="skill-dot"></span>CSS3</li>
+            <li><span class="skill-dot"></span>JavaScript</li>
+            <li><span class="skill-dot"></span>Responsive Design</li>
+            <li><span class="skill-dot"></span>Git & GitHub</li>
           </ul>
         </div>
         <div class="skill-group">
-          <h3 class="skill-group-title">Currently learning</h3>
-          <ul class="skill-list">
-            <li>Python</li>
-            <li>React</li>
+          <h3>Currently learning</h3>
+          <ul>
+            <li><span class="skill-dot learning"></span>Python</li>
+            <li><span class="skill-dot learning"></span>React</li>
+            <li><span class="skill-dot learning"></span>API Integration</li>
           </ul>
         </div>
         <div class="skill-group">
-          <h3 class="skill-group-title">Tools</h3>
-          <ul class="skill-list">
-            <li>VS Code</li>
-            <li>Chrome DevTools</li>
+          <h3>Tools</h3>
+          <ul>
+            <li><span class="skill-dot"></span>VS Code</li>
+            <li><span class="skill-dot"></span>Chrome DevTools</li>
+            <li><span class="skill-dot"></span>Figma (basic)</li>
+            <li><span class="skill-dot"></span>GitHub Pages</li>
           </ul>
         </div>
       </div>
@@ -112,40 +177,89 @@
   </section>
 
   <!-- PROJECTS -->
-  <section id="projects" class="section reveal">
-    <div class="wrap">
-      <p class="eyebrow mono">Projects</p>
+  <section class="section" id="projects">
+    <div class="section-inner">
+      <span class="section-label">Projects</span>
       <h2 class="section-title">What I've built</h2>
 
-      <div class="project-list">
+      <div class="projects-list">
 
-        <article class="project-card reveal">
-          <div class="project-tags mono">Frontend · Personal</div>
-          <h3 class="project-title">Personal Portfolio</h3>
-          <p class="project-desc">Needed a proper home for my work online — this site is it. Built from scratch with vanilla HTML, CSS, and JavaScript: custom animations, scroll reveals, and a fully responsive layout, no framework involved.</p>
-          <div class="project-links">
-            <a href="https://github.com/Munatheprogrammer" target="_blank" rel="noopener">GitHub ↗</a>
-            <a href="https://munatheprogrammer.github.io/agumirabel.github.io/" target="_blank" rel="noopener">Live demo ↗</a>
+        <!-- PROJECT 1 -->
+        <article class="project-card">
+          <div class="project-meta">
+            <span class="project-num">01</span>
+            <div class="project-tags">
+              <span class="tag">Frontend</span>
+              <span class="tag">Personal</span>
+            </div>
+          </div>
+          <div class="project-body">
+            <h3>Personal Portfolio</h3>
+            <p>Needed a proper home for my work online — this site is it. Built from scratch with vanilla HTML, CSS, and JavaScript: custom animations, scroll reveals, and a fully responsive layout, no framework involved.</p>
+            <div class="project-links">
+              <a href="https://github.com/Munatheprogrammer" target="_blank">GitHub ↗</a>
+              <a href="https://munatheprogrammer.github.io" target="_blank">Live demo ↗</a>
+            </div>
           </div>
         </article>
 
-        <article class="project-card reveal">
-          <div class="project-tags mono">Frontend · API · Utility</div>
-          <h3 class="project-title">Nigerian Weather Dashboard</h3>
-          <p class="project-desc">Most weather apps default to cities that aren't home. Built a dashboard showing live weather for Lagos, Enugu, and Abuja, pulling real-time data from a public API into a clean, readable layout.</p>
-          <div class="project-links">
-            <a href="https://github.com/Munatheprogrammer" target="_blank" rel="noopener">GitHub ↗</a>
-            <a href="https://munatheprogrammer.github.io/Nigerian-Weather-Dashboard/" target="_blank" rel="noopener">Live demo ↗</a>
+        <!-- PROJECT 2 -->
+        <article class="project-card">
+          <div class="project-meta">
+            <span class="project-num">02</span>
+            <div class="project-tags">
+              <span class="tag">Frontend</span>
+              <span class="tag">API</span>
+              <span class="tag">Utility</span>
+            </div>
+          </div>
+          <div class="project-body">
+            <h3>Nigerian Weather Dashboard</h3>
+            <p>Most weather apps default to cities that aren't home. Built a dashboard showing live weather for Lagos, Enugu, and Abuja, pulling real-time data from a public API into a clean, readable layout.</p>
+            <div class="project-links">
+              <a href="https://github.com/Munatheprogrammer/Nigerian-Weather-Dashboard" target="_blank">GitHub ↗</a>
+              <a href="https://munatheprogrammer.github.io/Nigerian-Weather-Dashboard/" target="_blank">Live demo ↗</a>
+            </div>
           </div>
         </article>
 
-        <article class="project-card reveal">
-          <div class="project-tags mono">Frontend · localStorage · Finance</div>
-          <h3 class="project-title">Student Budget Tracker</h3>
-          <p class="project-desc">Nigerian uni students juggle fees, allowance, and savings with no easy way to track it. Built a lightweight finance tracker that logs income, expenses, and savings goals entirely in the browser — no backend required.</p>
-          <div class="project-links">
-            <a href="https://github.com/Munatheprogrammer" target="_blank" rel="noopener">GitHub ↗</a>
-            <a href="https://munatheprogrammer.github.io/Student-Budget-Tracker/" target="_blank" rel="noopener">Live demo ↗</a>
+        <!-- PROJECT 3 -->
+        <article class="project-card">
+          <div class="project-meta">
+            <span class="project-num">03</span>
+            <div class="project-tags">
+              <span class="tag">Frontend</span>
+              <span class="tag">localStorage</span>
+              <span class="tag">Finance</span>
+            </div>
+          </div>
+          <div class="project-body">
+            <h3>Student Budget Tracker</h3>
+            <p>Nigerian uni students juggle fees, allowance, and savings with no easy way to track it. Built a lightweight finance tracker that logs income, expenses, and savings goals entirely in the browser — no backend required.</p>
+            <div class="project-links">
+              <a href="https://github.com/Munatheprogrammer/Student-Budget-Tracker" target="_blank">GitHub ↗</a>
+              <a href="https://munatheprogrammer.github.io/Student-Budget-Tracker/" target="_blank">Live demo ↗</a>
+            </div>
+          </div>
+        </article>
+
+        <!-- PROJECT 4 — Vita Track -->
+        <article class="project-card project-card-featured">
+          <div class="project-meta">
+            <span class="project-num">04</span>
+            <div class="project-tags">
+              <span class="tag">Team Project</span>
+              <span class="tag">Genesys</span>
+              <span class="tag">Healthcare</span>
+            </div>
+          </div>
+          <div class="project-body">
+            <h3>Vita Track <span class="featured-badge">Team Project</span></h3>
+            <p>A hospital billing and collections platform built as part of the Genesys Tech Hub Upskill 26.1 program. Vita Track streamlines staff records, billing clearance, and revenue tracking for healthcare institutions. I contributed to the frontend as part of a cross-functional team across Data Analysis, UI/UX, and Web Development tracks.</p>
+            <p class="project-tagline">Smarter billing. Stronger revenue.</p>
+            <div class="project-links">
+              <a href="https://github.com/Munatheprogrammer" target="_blank">GitHub ↗</a>
+            </div>
           </div>
         </article>
 
@@ -154,37 +268,58 @@
   </section>
 
   <!-- CONTACT -->
-  <section id="contact" class="section reveal">
-    <div class="wrap contact-wrap">
-      <p class="eyebrow mono">Contact</p>
+  <section class="section section-alt" id="contact">
+    <div class="section-inner contact-inner">
+      <span class="section-label">Contact</span>
       <h2 class="section-title">Let's connect</h2>
 
-      <div class="contact-box">
-        <h3>Open to opportunities 🚀</h3>
-        <p>Whether you have a project, an internship, or just want to talk tech — my inbox is always open.</p>
+      <div class="contact-grid">
+        <div class="contact-text">
+          <h3>Open to opportunities 🚀</h3>
+          <p>Whether you have a project, an internship, or just want to talk tech — my inbox is always open.</p>
+          <button class="email-copy" onclick="copyEmail()">
+            <span id="emailText">agumirabel3@gmail.com</span>
+            <span class="copy-icon">⎘ tap to copy</span>
+          </button>
+        </div>
 
-        <button class="contact-email mono" id="copyEmail" data-email="agumirabel3@gmail.com">
-          agumirabel3@gmail.com
-          <span class="copy-hint mono">tap to copy</span>
-        </button>
-
-        <div class="social-links">
-          <a href="https://github.com/Munatheprogrammer" target="_blank" rel="noopener">GitHub</a>
-          <a href="https://www.linkedin.com/in/mirabel-agu-384938391" target="_blank" rel="noopener">LinkedIn</a>
+        <div class="contact-links">
+          <a href="https://github.com/Munatheprogrammer" target="_blank" class="contact-link">
+            <span class="contact-link-icon">🐙</span>
+            <div>
+              <strong>GitHub</strong>
+              <span>@Munatheprogrammer</span>
+            </div>
+            <span class="contact-link-arrow">↗</span>
+          </a>
+          <a href="https://www.linkedin.com/in/mirabel-agu-384938391" target="_blank" class="contact-link">
+            <span class="contact-link-icon">💼</span>
+            <div>
+              <strong>LinkedIn</strong>
+              <span>Mirabel Agu</span>
+            </div>
+            <span class="contact-link-arrow">↗</span>
+          </a>
+          <a href="https://munatheprogrammer.github.io" target="_blank" class="contact-link">
+            <span class="contact-link-icon">🌐</span>
+            <div>
+              <strong>Portfolio</strong>
+              <span>munatheprogrammer.github.io</span>
+            </div>
+            <span class="contact-link-arrow">↗</span>
+          </a>
         </div>
       </div>
     </div>
   </section>
 
-</main>
+  <!-- FOOTER -->
+  <footer>
+    <p>Designed & built by <span>Mirabel Agu</span> · © 2025</p>
+    <a href="#top">Back to top ↑</a>
+  </footer>
 
-<footer class="site-footer">
-  <div class="wrap footer-inner">
-    <p class="mono">Designed &amp; built by Mirabel Agu · © 2025</p>
-    <a href="#top" class="back-top mono">Back to top ↑</a>
-  </div>
-</footer>
-
-<script src="script.js"></script>
+  <script src="script.js"></script>
 </body>
 </html>
+
