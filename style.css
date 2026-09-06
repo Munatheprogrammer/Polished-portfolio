@@ -359,7 +359,18 @@ nav {
   font-style: italic;
 }
 
-.featured-badge {
+.project-card-wip {
+  background: #F6F8FB;
+}
+.project-card-wip:hover { background: #EEF2F8; }
+
+.wip-badge {
+  font-family: 'Inter', sans-serif;
+  font-size: 0.62rem; font-weight: 700;
+  background: var(--accent2); color: white;
+  padding: 0.2rem 0.6rem; border-radius: 20px;
+  letter-spacing: 0.5px; text-transform: uppercase;
+}
   font-family: 'Inter', sans-serif;
   font-size: 0.62rem; font-weight: 700;
   background: var(--accent); color: white;
@@ -472,4 +483,5 @@ footer a:hover { color: var(--accent); }
   .project-meta { border-right: none; border-bottom: 1px solid var(--border); flex-direction: row; align-items: center; padding: 1rem 1.5rem; }
   .footer { flex-direction: column; gap: 0.5rem; text-align: center; }
 }
+
 
